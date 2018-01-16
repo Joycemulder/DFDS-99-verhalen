@@ -95,7 +95,7 @@ header input {
 header+div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 15rem auto;
+    grid-template-rows: 15rem 15rem;
     grid-column-gap: 0.8rem;
     grid-row-gap: 1.25rem;
     margin: 1.25rem 7rem;
@@ -113,14 +113,40 @@ div>article {
     color: #ffffff;
 }
 
+
+/*verhalen grid*/
+
 section {
+    display: grid;
+    grid-row-start: 3;
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 4;
+    grid-template-columns: 15rem 37rem 30rem;
+    grid-template-rows: 3rem 3rem;
+    align-items: center;
+    background: #ffffff;
+}
+
+section article:first-child {
+    grid-column-start: 1;
+    grid-column-end: 6;
     grid-row-start: 3;
     grid-row-end: 3;
     background-color: #ffffff;
     padding: 1rem;
 }
+
+
+/*
+section article:first-child+article {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    background-color: #ffffff;
+    padding: 1rem;
+}
+*/
 
 
 /* DROP DOWN FILTER AND SORT from w3schools https://www.w3schools.com/howto/howto_css_dropdown.asp & https://www.w3schools.com/howto/howto_js_dropdown.asp */
