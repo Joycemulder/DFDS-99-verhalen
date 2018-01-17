@@ -121,7 +121,7 @@ section {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 17.5rem 9.5rem;
+    grid-template-rows: 17.5rem 1rem;
     grid-row-gap: 1.25rem;
     align-items: center;
     grid-column-gap: 0.8rem;
@@ -190,21 +190,30 @@ section article:nth-child(7) {
     padding: 1rem;
 }
 
-section a:nth-child(3) {
+
+/*tekst in de blokken*/
+
+section a:nth-child(2) {
     color: #F6861F;
     font-size: 1.25em;
+    font-family: dfds-bold;
+    letter-spacing: 0.04rem;
 }
 
-section a:nth-child(3):hover {
+section a:nth-child(2):hover {
     color: #85BCE9;
     font-size: 1.25em;
     transition-duration: 0.3s;
+    font-family: dfds-bold;
+    letter-spacing: 0.04rem;
 }
 
 footer {
     margin: 0.5rem 0 0 0;
     color: #002b45;
     font-size: 1.25em;
+    font-family: dfds-bold;
+    letter-spacing: 0.04rem;
 }
 
 
