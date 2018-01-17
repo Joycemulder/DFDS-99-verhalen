@@ -85,7 +85,7 @@ header input {
     cursor: pointer;
     grid-column-start: 3;
     grid-row-start: 2;
-    width: 20rem;
+    width: 21.2rem;
     height: 3rem;
 }
 
@@ -190,6 +190,23 @@ section article:nth-child(7) {
     padding: 1rem;
 }
 
+section a:nth-child(3) {
+    color: #F6861F;
+    font-size: 1.25em;
+}
+
+section a:nth-child(3):hover {
+    color: #85BCE9;
+    font-size: 1.25em;
+    transition-duration: 0.3s;
+}
+
+footer {
+    margin: 0.5rem 0 0 0;
+    color: #002b45;
+    font-size: 1.25em;
+}
+
 
 /* DROP DOWN FILTER AND SORT from w3schools https://www.w3schools.com/howto/howto_css_dropdown.asp & https://www.w3schools.com/howto/howto_js_dropdown.asp */
 
@@ -278,11 +295,4 @@ button {
 
 button:hover {
     background-color: #85BCE9;
-}
-
-footer {
-    width: 100%;
-    z-index: 100;
-    color: #ffffff;
-    background-color: #002b45;
 }
