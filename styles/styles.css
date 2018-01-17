@@ -52,8 +52,8 @@ html {
 
 header {
     display: grid;
-    grid-template-columns: 15rem 37rem 30rem;
-    grid-template-rows: 3rem 3rem;
+    grid-template-columns: 9rem 37rem 30rem;
+    grid-template-rows: 3rem;
     align-items: center;
     color: #85BCE9;
     background: #ffffff;
@@ -62,7 +62,7 @@ header {
 img {
     width: 7rem;
     padding: 0.5rem;
-    margin-left: 7rem;
+    margin-left: 1rem;
 }
 
 h1 {
@@ -85,7 +85,7 @@ header input {
     cursor: pointer;
     grid-column-start: 3;
     grid-row-start: 2;
-    width: 21.2rem;
+    width: 20rem;
     height: 3rem;
 }
 
@@ -94,22 +94,21 @@ header input {
 
 header+div {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 15rem 15rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15rem;
     grid-column-gap: 0.8rem;
     grid-row-gap: 1.25rem;
-    margin: 1.25rem 7rem;
+    margin: 1.25rem 1.25rem;
 }
 
 div>article {
     grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 1;
-    padding: 3rem;
+    padding: 1rem;
     background-image: url("afb/Nichterig.png");
     background background-size: cover;
-    background-position: -0.5rem;
     color: #ffffff;
 }
 
@@ -118,35 +117,42 @@ div>article {
 
 section {
     display: grid;
-    grid-row-start: 3;
+    grid-row-start: 1;
     grid-column-start: 1;
-    grid-column-end: 4;
-    grid-template-columns: 15rem 37rem 30rem;
-    grid-template-rows: 3rem 3rem;
+    grid-column-end: 2;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 17.5rem 9.5rem;
+    grid-row-gap: 1.25rem;
     align-items: center;
-    background: #ffffff;
+    grid-column-gap: 0.8rem;
 }
 
 section article:first-child {
     grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: 3;
     background-color: #ffffff;
     padding: 1rem;
 }
 
-
-/*
 section article:first-child+article {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 5;
     grid-row-start: 4;
     grid-row-end: 4;
     background-color: #ffffff;
     padding: 1rem;
 }
-*/
+
+section article:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    background-color: #ffffff;
+    padding: 1rem;
+}
 
 
 /* DROP DOWN FILTER AND SORT from w3schools https://www.w3schools.com/howto/howto_css_dropdown.asp & https://www.w3schools.com/howto/howto_js_dropdown.asp */
@@ -157,11 +163,13 @@ section article:first-child+article {
 .dropbtn {
     background-color: #F6861F;
     color: white;
-    padding: 1rem;
+    width: 23.5rem;
+    height: 3.5rem;
     font-size: 1.25rem;
     border: none;
     cursor: pointer;
     letter-spacing: 0.08rem;
+    text-align: center;
 }
 
 
@@ -187,6 +195,7 @@ section article:first-child+article {
     display: none;
     position: absolute;
     padding: 1rem;
+    width: 21.5rem;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
