@@ -52,7 +52,7 @@ html {
 
 header {
     display: grid;
-    grid-template-columns: 9rem 37rem 30rem;
+    grid-template-columns: 9rem 9rem auto 3rem 0.7rem;
     grid-template-rows: 3rem;
     align-items: center;
     color: #85BCE9;
@@ -63,6 +63,19 @@ img {
     width: 7rem;
     padding: 0.5rem;
     margin-left: 1rem;
+}
+
+img[alt="search icon"] {
+    grid-column-start: 3;
+    width: 2.5rem;
+    justify-self: end;
+}
+
+img[alt="hamburger icon"] {
+    grid-column-start: 4;
+    width: 2.5rem;
+    margin-left: 1rem;
+    justify-self: end;
 }
 
 h1 {
@@ -81,13 +94,15 @@ a:hover {
     transition-duration: 0.3s;
 }
 
-header input {
+
+/*header input {
     cursor: pointer;
     grid-column-start: 3;
     grid-row-start: 2;
     width: 21.2rem;
     height: 3rem;
 }
+*/
 
 
 /*grid blok opgeslagen verhalen*/
