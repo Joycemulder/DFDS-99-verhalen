@@ -148,7 +148,7 @@ section article:first-child {
     grid-row-start: 3;
     grid-row-end: 3;
     background-color: #ffffff;
-    padding: 1rem;
+
 
 }
 
@@ -159,7 +159,7 @@ section article:first-child + article {
     grid-row-start: 4;
     grid-row-end: 4;
     background-color: #ffffff;
-    padding: 1rem;
+
 }
 
 
@@ -169,7 +169,7 @@ section article:nth-child(3) {
     grid-row-start: 5;
     grid-row-end: 5;
     background-color: #ffffff;
-    padding: 1rem;
+
 }
 
 section article:nth-child(4) {
@@ -178,7 +178,7 @@ section article:nth-child(4) {
     grid-row-start: 6;
     grid-row-end: 6;
     background-color: #ffffff;
-    padding: 1rem;
+
 }
 
 section article:nth-child(5) {
@@ -187,7 +187,7 @@ section article:nth-child(5) {
     grid-row-start: 7;
     grid-row-end: 7;
     background-color: #ffffff;
-    padding: 1rem;
+
 }
 
 section article:nth-child(6) {
@@ -196,7 +196,7 @@ section article:nth-child(6) {
     grid-row-start: 8;
     grid-row-end: 8;
     background-color: #ffffff;
-    padding: 1rem;
+
 }
 
 section article:nth-child(7) {
@@ -205,26 +205,26 @@ section article:nth-child(7) {
     grid-row-start: 9;
     grid-row-end: 9;
     background-color: #ffffff;
-    padding: 1rem;
+
 }
 
-article > img[alt="verhaal blind"] {
+article > img {
     width: 100%;
-    max-height: 7rem;
-    margin: -1rem;
+    max-height: 6.1rem;
     object-fit: cover;
 }
 
 /*tekst in de blokken*/
 
-section a:nth-child(2) {
+section a {
     color: #F6861F;
     font-size: 1.25em;
     font-family: dfds-bold;
     letter-spacing: 0.04rem;
+    padding: 0 0 0 1rem;
 }
 
-section a:nth-child(2):hover {
+section a:hover {
     color: #85BCE9;
     font-size: 1.25em;
     transition-duration: 0.3s;
@@ -238,8 +238,13 @@ footer {
     font-size: 1.25em;
     font-family: dfds-bold;
     letter-spacing: 0.04rem;
+    padding: 0 0 1rem 1rem;
 }
 
+img + h3 {
+    margin: -5.5rem 0 4.5rem 1rem;
+    background-color: aqua;
+}
 
 /* DROP DOWN FILTER AND SORT from w3schools https://www.w3schools.com/howto/howto_css_dropdown.asp & https://www.w3schools.com/howto/howto_js_dropdown.asp */
 
