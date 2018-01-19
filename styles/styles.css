@@ -32,9 +32,9 @@ p {
 }
 
 h3 {
-    font-size;
-    1.25rem;
+    font-size: 1.25rem;
     letter-spacing: 0.08rem;
+
 }
 
 
@@ -47,6 +47,21 @@ html {
     padding: 0;
 }
 
+/*button*/
+
+button {
+    color: #ffffff;
+    background-color: #F6861F;
+    font-family: dfds-bold;
+    font-size: 1.25rem;
+    padding: 0.3rem 1rem;
+    border: none;
+    transition-duration: 0.3s;
+}
+
+button:hover {
+    background-color: #85BCE9;
+}
 
 /*Header*/
 
@@ -125,6 +140,77 @@ div > article {
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
+}
+
+/* DROP DOWN FILTER AND SORT from w3schools https://www.w3schools.com/howto/howto_css_dropdown.asp & https://www.w3schools.com/howto/howto_js_dropdown.asp */
+
+/* Dropdown Button */
+
+.dropbtn {
+    background-color: #F6861F;
+    color: white;
+    width: 23.5rem;
+    height: 3.5rem;
+    font-size: 1.25rem;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.08rem;
+    text-align: center;
+}
+
+
+/* Dropdown button on hover & focus */
+
+.dropbtn:hover,
+.dropbtn:focus {
+    text-decoration-line: underline;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding: 1rem;
+    width: 21.5rem;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: black;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: white;
+    font-size: 30rem;
+}
+
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
+.show {
+    display: block;
 }
 
 
@@ -208,10 +294,48 @@ section article:nth-child(7) {
 
 }
 
-article > img {
+/*image van de blokken*/
+
+article img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2;
     width: 100%;
-    max-height: 6.1rem;
-    object-fit: cover;
+    max-height: 7rem;
+    margin-bottom: -0.5em;
+    grid-column-start: 1;
+    background-color: aqua;
+}
+
+
+/*grid voor witte blok met tekst*/
+
+img + div {
+    display: grid;
+    height: 100%;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-template-rows: 3rem;
+    grid-template-columns: 12rem;
+    padding: 0 0 1rem 1rem;
+
+}
+
+div + h3 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+
+}
+
+h3 > a {
+    grid-row-start: 1;
+    grid-column-start: 2;
+
+}
+
+a > footer {
+    grid-row-start: 3;
+    grid-column-start: 1;
 }
 
 /*tekst in de blokken*/
@@ -221,7 +345,7 @@ section a {
     font-size: 1.25em;
     font-family: dfds-bold;
     letter-spacing: 0.04rem;
-    padding: 0 0 0 1rem;
+
 }
 
 section a:hover {
@@ -238,98 +362,5 @@ footer {
     font-size: 1.25em;
     font-family: dfds-bold;
     letter-spacing: 0.04rem;
-    padding: 0 0 1rem 1rem;
-}
 
-img + h3 {
-    margin: -5.5rem 0 4.5rem 1rem;
-    background-color: aqua;
-}
-
-/* DROP DOWN FILTER AND SORT from w3schools https://www.w3schools.com/howto/howto_css_dropdown.asp & https://www.w3schools.com/howto/howto_js_dropdown.asp */
-
-/* Dropdown Button */
-
-.dropbtn {
-    background-color: #F6861F;
-    color: white;
-    width: 23.5rem;
-    height: 3.5rem;
-    font-size: 1.25rem;
-    border: none;
-    cursor: pointer;
-    letter-spacing: 0.08rem;
-    text-align: center;
-}
-
-
-/* Dropdown button on hover & focus */
-
-.dropbtn:hover,
-.dropbtn:focus {
-    text-decoration-line: underline;
-}
-
-
-/* The container <div> - needed to position the dropdown content */
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-
-/* Dropdown Content (Hidden by Default) */
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    padding: 1rem;
-    width: 21.5rem;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
-}
-
-
-/* Links inside the dropdown */
-
-.dropdown-content a {
-    color: black;
-    padding: 0.75rem 1rem;
-    text-decoration: none;
-    display: block;
-}
-
-
-/* Change color of dropdown links on hover */
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-    color: white;
-    font-size: 30rem;
-}
-
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-
-.show {
-    display: block;
-}
-
-
-/*button*/
-
-button {
-    color: #ffffff;
-    background-color: #F6861F;
-    font-family: dfds-bold;
-    font-size: 1.25rem;
-    padding: 0.3rem 1rem;
-    border: none;
-    transition-duration: 0.3s;
-}
-
-button:hover {
-    background-color: #85BCE9;
 }
