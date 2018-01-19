@@ -59,7 +59,7 @@ header {
     background: #ffffff;
 }
 
-img {
+img[alt="logo"] {
     width: 7rem;
     padding: 0.5rem;
     margin-left: 1rem;
@@ -104,10 +104,9 @@ a:hover {
 }
 */
 
-
 /*grid blok opgeslagen verhalen*/
 
-header+div {
+header + div {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 15rem;
@@ -116,14 +115,15 @@ header+div {
     margin: 1.25rem 1.25rem;
 }
 
-div>article {
+div > article {
     grid-column-start: 1;
     grid-column-end: ;
     grid-row-start: 1;
     grid-row-end: 1;
     padding: 1rem;
-    background-image: url("afb/Nichterig.png");
-    background background-size: cover;
+    background-image: url("afb/paranoia.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #ffffff;
 }
 
@@ -149,9 +149,11 @@ section article:first-child {
     grid-row-end: 3;
     background-color: #ffffff;
     padding: 1rem;
+
 }
 
-section article:first-child+article {
+
+section article:first-child + article {
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 4;
@@ -159,6 +161,7 @@ section article:first-child+article {
     background-color: #ffffff;
     padding: 1rem;
 }
+
 
 section article:nth-child(3) {
     grid-column-start: 1;
@@ -205,6 +208,12 @@ section article:nth-child(7) {
     padding: 1rem;
 }
 
+article > img[alt="verhaal blind"] {
+    width: 100%;
+    max-height: 7rem;
+    margin: -1rem;
+    object-fit: cover;
+}
 
 /*tekst in de blokken*/
 
@@ -233,7 +242,6 @@ footer {
 
 
 /* DROP DOWN FILTER AND SORT from w3schools https://www.w3schools.com/howto/howto_css_dropdown.asp & https://www.w3schools.com/howto/howto_js_dropdown.asp */
-
 
 /* Dropdown Button */
 
