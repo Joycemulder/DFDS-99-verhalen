@@ -304,7 +304,7 @@ article img {
     max-height: 7rem;
     margin-bottom: -0.5em;
     grid-column-start: 1;
-    background-color: aqua;
+    object-fit: cover;
 }
 
 
@@ -318,6 +318,7 @@ img + div {
     grid-template-rows: 3rem;
     grid-template-columns: 12rem;
     padding: 0 0 1rem 1rem;
+
 
 }
 
