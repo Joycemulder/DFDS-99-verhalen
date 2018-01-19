@@ -232,6 +232,7 @@ section article:first-child {
     grid-row-start: 3;
     grid-row-end: 3;
     background-color: #ffffff;
+    color: #D16376;
 
 
 }
@@ -243,7 +244,7 @@ section article:first-child + article {
     grid-row-start: 4;
     grid-row-end: 4;
     background-color: #ffffff;
-
+    color: #55A963;
 }
 
 
@@ -253,6 +254,7 @@ section article:nth-child(3) {
     grid-row-start: 5;
     grid-row-end: 5;
     background-color: #ffffff;
+    color: #574E73;
 
 }
 
@@ -262,6 +264,7 @@ section article:nth-child(4) {
     grid-row-start: 6;
     grid-row-end: 6;
     background-color: #ffffff;
+    color: #1B5786;
 
 }
 
@@ -271,6 +274,7 @@ section article:nth-child(5) {
     grid-row-start: 7;
     grid-row-end: 7;
     background-color: #ffffff;
+    color: #D16376;
 
 }
 
@@ -280,6 +284,7 @@ section article:nth-child(6) {
     grid-row-start: 8;
     grid-row-end: 8;
     background-color: #ffffff;
+    color: #55A963;
 
 }
 
@@ -289,6 +294,7 @@ section article:nth-child(7) {
     grid-row-start: 9;
     grid-row-end: 9;
     background-color: #ffffff;
+    color: #1B5786;
 
 }
 
@@ -348,6 +354,8 @@ footer + img[alt="opslaan icon"] {
     align-self: end;
 
 }
+
+
 
 /*tekst in de blokken*/
 
