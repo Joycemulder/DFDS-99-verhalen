@@ -25,7 +25,12 @@ label {
 
 body,
 html {
-    background-color: #EEF0F1;
+    background: url(afb/quiraing-isle-of-skye-schotland.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -112,9 +117,9 @@ form {
 fieldset {
     border: none;
     font-family: dfds-light;
+
+
 }
-
-
 
 input {
     display: block;
@@ -123,47 +128,41 @@ input {
     height: 2rem;
     padding-left: 1rem;
     margin-bottom: 2rem;
-    box-shadow: inset 0 -0.125rem 0 #c5c5cb;
+    box-shadow: inset 0 -0.125rem 0 #EEF0F1;
     transition: 0.5sec ease;
-
 }
 
 input:hover {
     letter-spacing: 0.1rem;
-    box-shadow: inset 0 -0.125rem 0 #a6a6ac;
+    box-shadow: inset 0 -0.125rem 0 #434950;
 }
 
-input: focus {
+input:focus {
     display: block;
     outline: none;
     border: none;
     width: 20rem;
+    height: 3rem;
+    padding-left: 1rem;
+
+}
+
+input:invalid {
+    display: block;
+    background-color: rgba(209, 99, 118, 0.3);
+    outline: none;
+    border: none;
+    width: 16rem;
     height: 2rem;
     padding-left: 1rem;
-    box-shadow: inset 0 -0.125rem 0 #a6a6ac;
-
 }
 
-input: valid {
+input:focus:valid {
     display: block;
-    background-color: rgba(85, 169, 99, 0.5);
+    background-color: rgba(85, 169, 99, 0.3);
     outline: none;
     border: none;
-    width: 20rem;
-    height: 3rem;
-    padding-left: 1rem;
-    box-shadow: inset 0 -0.125rem 0 #55A963;
-}
+    width: 16rem;
+    height: 2rem;
 
-input: invalid {
-    display: block;
-    background-color: rgba(209, 99, 118, 0.5);
-    outline: none;
-    border: none;
-    width: 20rem;
-    height: 3rem;
-    padding-left: 1rem;
-    box-shadow: inset 0 -0.125rem 0 #D16376;
 }
-
-/* Responsive fiksen awesome !!!! */
