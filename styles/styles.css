@@ -108,15 +108,6 @@ a {
 }
 
 
-/*header input {
-    cursor: pointer;
-    grid-column-start: 3;
-    grid-row-start: 2;
-    width: 21.2rem;
-    height: 3rem;
-}
-*/
-
 /*grid blok opgeslagen verhalen*/
 
 header + div {
@@ -141,6 +132,10 @@ div > article {
     color: #55A963;
 
 
+}
+
+div > article:hover {
+    box-shadow: 0 0.8rem 1.75rem rgba(0, 0, 0, 0.25), 0 0.6rem 0.6rem rgba(0, 0, 0, 0.22);
 }
 
 /* DROP DOWN FILTER AND SORT from w3schools https://www.w3schools.com/howto/howto_css_dropdown.asp & https://www.w3schools.com/howto/howto_js_dropdown.asp */
@@ -232,9 +227,7 @@ section {
 }
 
 
-section:hover {
-    box-shadow: 0 0.8rem 1.75rem rgba(0, 0, 0, 0.25), 0 0.6rem 0.6rem rgba(0, 0, 0, 0.22);
-}
+
 
 section article:first-child {
     grid-column-start: 1;
@@ -329,7 +322,7 @@ img + div {
     grid-row-start: 1;
     grid-column-start: 1;
     grid-template-rows: 4;
-    grid-template-columns: 50% auto 25% 25%;
+    grid-template-columns: 60% auto 20% 20%;
     padding: 0 0 1rem 1rem;
 
 
@@ -414,7 +407,7 @@ footer {
 
 /* Responsive fiksen awesome !!!! */
 
-@media (min-width: 32rem) {
+@media screen and (min-width: 32rem) {
     section article:first-child + article {
         grid-column-start: 1;
         grid-column-end: 3;
@@ -459,12 +452,15 @@ footer {
         grid-row-end: 6;
 
     }
+    nav {
+        display: none;
+    }
 }
 
-@media (min-width: 52rem) {
+@media screen and (min-width: 52rem) {
     section article:first-child + article {
         grid-column-start: 1;
-        grid-column-end: ;
+        grid-column-end: 3;
         grid-row-start: 4;
         grid-row-end: 4;
 
@@ -505,5 +501,10 @@ footer {
         grid-row-start: 5;
         grid-row-end: 5;
 
+    }
+    nav {
+            {
+            display: none;
+        }
     }
 }
