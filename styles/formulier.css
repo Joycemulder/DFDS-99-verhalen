@@ -10,29 +10,17 @@
     src: url('../fonts/dfds-light.eot') format('embedded-opentype'), url('../fonts/dfds-light.ttf') format('truetype'), url('../fonts/dfds-light.woff') format('web-openfont');
 }
 
-h2,
-h3,
-h4,
+legend,
 p {
     font-family: dfds-bold;
 }
 
-nav,
-h1,
 p,
 label,
 a,
-footer,
+
     {
     font-family: dfds-light;
-}
-
-
-h3 {
-    font-size: 1.25rem;
-    letter-spacing: 0.08rem;
-    text-transform: uppercase;
-
 }
 
 
@@ -108,40 +96,73 @@ a {
 }
 
 
-/*grid blok opgeslagen verhalen*/
-
-header + body {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 15rem;
-    grid-column-gap: 0.8rem;
-    grid-row-gap: 1.25rem;
-    margin: 1.25rem 1.25rem;
-
-}
-
-div > article {
-    grid-column-start: 1;
-    grid-column-end: ;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    padding: 1rem;
-    background-image: url("afb/paranoia.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #55A963;
-
-
-}
-
 /*form grid*/
 
-fieldset {
+form {
+    display: block;
+    max-width: 20rem;
+    border: none;
     background-color: #ffffff;
-    margin: 1.25rem 1.25rem;
+    padding: 1.5rem;
+    margin: 1.25rem;
+    margin-right: auto;
+    margin-left: auto;
 
 }
 
+fieldset {
+    border: none;
+    font-family: dfds-light;
+}
 
+fieldset input {
+    display: block;
+    border: none;
+    width: 16.4rem;
+    height: 2rem;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: inset 0 -0.125rem 0 #c5c5cb;
+    transition: 0.5sec ease;
+
+}
+
+fieldsetinput:hover {
+    letter-spacing: 0.1rem;
+    box-shadow: inset 0 -0.125rem 0 #a6a6ac;
+}
+
+fieldset input: focus {
+    display: block;
+    outline: none;
+    border: none;
+    width: 20rem;
+    height: 2rem;
+    padding-left: 1rem;
+    box-shadow: inset 0 -0.125rem 0 #a6a6ac;
+
+}
+
+fieldset input: valid {
+    display: block;
+    background-color: rgba(85, 169, 99, 0.5);
+    outline: none;
+    border: none;
+    width: 20rem;
+    height: 3rem;
+    padding-left: 1rem;
+    box-shadow: inset 0 -0.125rem 0 #55A963;
+}
+
+fieldset input: invalid {
+    display: block;
+    background-color: rgba(209, 99, 118, 0.5);
+    outline: none;
+    border: none;
+    width: 20rem;
+    height: 3rem;
+    padding-left: 1rem;
+    box-shadow: inset 0 -0.125rem 0 #D16376;
+}
 
 /* Responsive fiksen awesome !!!! */

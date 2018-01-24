@@ -15,12 +15,13 @@
 </header>
 
 <body>
-    <form>
+    <form action="#">
         <fieldset>
             <legend> Inloggen </legend>
-            <label>Gebruikersnaam of emailadres <input type="text" name="gebruikernaams of emailadres" ></label>
-            <label>Wachtwoord <input type="password" name="wachtwoord"></label>
-            <button type="button" name="inloggen" onclick="location.href='index.html'">Inloggen</button><input type="checkbox" name="onthouden"> Onthoud mij
+            <label for="mail">Emailadres </label><input type="email" name="emailadres">
+            <label for="wachtwoord">Wachtwoord</label>
+            <input type="password" name="wachtwoord">
+            <button type="button" name="inloggen" onclick="location.href='index.html'">Inloggen</button>
             <button type="button" name="registeren" onclick="location.href='registreren.html'">Registreren</button>
             <a href="#">Wachtwoord vergeten</a>
         </fieldset>
