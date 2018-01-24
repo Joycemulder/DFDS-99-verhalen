@@ -10,19 +10,16 @@
     src: url('../fonts/dfds-light.eot') format('embedded-opentype'), url('../fonts/dfds-light.ttf') format('truetype'), url('../fonts/dfds-light.woff') format('web-openfont');
 }
 
-legend,
-p {
+legend {
     font-family: dfds-bold;
+    font-size: 1.25rem;
+    color: #002B45;
+    padding-bottom: 1rem;
 }
 
-p,
-label,
-a,
-
-    {
-    font-family: dfds-light;
+label {
+    color: #85BCE9;
 }
-
 
 /*Kleur*/
 
@@ -44,6 +41,7 @@ button {
     border: none;
     transition-duration: 0.3s;
     text-transform: uppercase;
+    margin-bottom: 1rem;
 
 }
 
@@ -89,9 +87,10 @@ h1 {
 }
 
 a {
+
     font-family: dfds-bold;
-    font-size: 1.25rem;
-    color: #ffffff;
+    font-size: 1rem;
+    color: #002B45;
     text-decoration: none;
 }
 
@@ -115,7 +114,9 @@ fieldset {
     font-family: dfds-light;
 }
 
-fieldset input {
+
+
+input {
     display: block;
     border: none;
     width: 16.4rem;
@@ -127,12 +128,12 @@ fieldset input {
 
 }
 
-fieldsetinput:hover {
+input:hover {
     letter-spacing: 0.1rem;
     box-shadow: inset 0 -0.125rem 0 #a6a6ac;
 }
 
-fieldset input: focus {
+input: focus {
     display: block;
     outline: none;
     border: none;
@@ -143,7 +144,7 @@ fieldset input: focus {
 
 }
 
-fieldset input: valid {
+input: valid {
     display: block;
     background-color: rgba(85, 169, 99, 0.5);
     outline: none;
@@ -154,7 +155,7 @@ fieldset input: valid {
     box-shadow: inset 0 -0.125rem 0 #55A963;
 }
 
-fieldset input: invalid {
+input: invalid {
     display: block;
     background-color: rgba(209, 99, 118, 0.5);
     outline: none;
