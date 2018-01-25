@@ -110,12 +110,12 @@ a {
 }
 
 
-/*grid blok opgeslagen verhalen*/
+/*het verhaal*/
 
 section {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 5;
     grid-column-gap: 0.8rem;
     grid-row-gap: 1.25rem;
     margin: 0 1.25rem 1.25rem;
@@ -124,6 +124,65 @@ section {
 }
 
 article img {
-
     width: 100%;
+}
+
+/* sterren en comment*/
+
+img + div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 4;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    padding: 1rem;
+}
+
+div + button {
+    grid-column-start: 1;
+    grid-row-start: 1;
+
+
+}
+
+button + img[alt="legester1"] {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    width: 2rem;
+    padding: 1rem;
+}
+
+img[alt="legester1"] + img[alt="legester2"] {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    width: 2rem;
+    padding: 1rem 1rem 1rem 3.5rem;
+}
+
+img[alt="legester2"] + img[alt="legester3"] {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    width: 2rem;
+    padding: 1rem 1rem 1rem 6rem;
+}
+
+img[alt="legester3"] + img[alt="legester4"] {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    width: 2rem;
+    padding: 1rem 1rem 1rem 8.5rem;
+}
+
+img[alt="legester4"] + img[alt="legester5"] {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    width: 2rem;
+    padding: 1rem 1rem 1rem 11rem;
+}
+
+img + form {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    font-family: dfds-light;
+
 }

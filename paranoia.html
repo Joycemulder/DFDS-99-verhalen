@@ -32,18 +32,24 @@
     <!-- Verhaal -->
     <section>
         <article>
-            <img src="afb/paranoia%20vormgeving-01.png" alt="paranoia verhaal" <!-- Favoriet -->
-            <button type="button" name="favoriet" onclick="location.href='mijnlijst.html'">Toevoegen aan mijn lijst</button>
+            <img src="afb/paranoia%20vormgeving-01.png" alt="paranoia verhaal">
+            <!-- Favoriet -->
+            <div>
+                <button type="button" name="favoriet" onclick="location.href='mijnlijst.html'">Toevoegen aan mijn lijst</button>
+                <img src="afb/leegster.png" alt="legester1">
+                <img src="afb/leegster.png" alt="legester2">
+                <img src="afb/leegster.png" alt="legester3">
+                <img src="afb/leegster.png" alt="legester4">
+                <img src="afb/leegster.png" alt="legester5">
+                <!-- commentaar -->
+                <form>
+                    <legend>Schrijf hier je commentaar</legend>
+                    Naam: <input type="text" name="usrname">
+                    <textarea rows="5" cols="50" name="comment" form="usrform"></textarea>
+                    <input type="submit">
+                </form>
 
-            <!-- commentaar -->
-            <form>
-                <legend>Schrijf hier je commentaar</legend>
-                Naam: <input type="text" name="usrname">
-                <textarea rows="5" cols="50" name="comment" form="usrform"></textarea>
-                <input type="submit">
-            </form>
-
-
+            </div>
         </article>
     </section>
 </body>

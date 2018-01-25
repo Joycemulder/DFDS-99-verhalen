@@ -134,9 +134,7 @@ div > article {
 
 }
 
-div > article:hover {
-    box-shadow: 0 0.8rem 1.75rem rgba(0, 0, 0, 0.25), 0 0.6rem 0.6rem rgba(0, 0, 0, 0.22);
-}
+
 
 /* DROP DOWN FILTER AND SORT from w3schools https://www.w3schools.com/howto/howto_css_dropdown.asp & https://www.w3schools.com/howto/howto_js_dropdown.asp */
 
@@ -373,6 +371,17 @@ footer + img[alt="opslaan icon"] {
     grid-column-start: 4;
     grid-row-start: 3;
     justify-self: end;
+
+}
+
+img[alt="opslaan icon"] + img[alt="opgeslagen icon"] {
+    width: 1.13rem;
+    height: 1.3rem;
+    padding: 0.5rem 1rem 0 0;
+    grid-column-start: 4;
+    grid-row-start: 3;
+    justify-self: end;
+    display: none;
 
 }
 
