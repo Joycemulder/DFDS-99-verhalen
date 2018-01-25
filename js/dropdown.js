@@ -23,17 +23,19 @@ window.onclick = function (event) {
 */
 
 
-var button = document.getElementById("save");
-var srcv = button.src;
+var buttonSave = document.getElementById("save");
+var srcv = buttonSave.src;
+
+console.log("buttonsaved");
 
 var change = function () {
     if (srcv = "afb/savebutton.png") {
-        button.src = "afb/groenvink.png"
-    } else if (scrv = "afb/groenvink.png") {
-        button.src = "afb/savebutton.png"
+        buttonSave.src = "afb/groenvink.png"
+    } else if (srcv = "afb/groenvink.png") {
+        buttonSave.src = "afb/savebutton.png"
     } else {
-        button.src = "afb/savebutton.png"
+        buttonSave.src = "afb/savebutton.png"
     }
 }
 
-button.addEventListener("click", change);
+buttonSave.addEventListener("click", change);
