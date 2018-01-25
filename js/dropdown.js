@@ -23,12 +23,17 @@ window.onclick = function (event) {
 */
 
 
-var grijsOpslaan = document.getElementById("save");
-var groenOpgeslagen = document.getElementById("saved");
+var button = document.getElementById("save");
+var srcv = button.src;
 
 var change = function () {
-    grijsOpslaan.classList.remove('opslaan');
-    groenOpgeslagen.classList.add('opgeslagen');
+    if (srcv = "afb/savebutton.png") {
+        button.src = "afb/groenvink.png"
+    } else if (scrv = "afb/groenvink.png") {
+        button.src = "afb/savebutton.png"
+    } else {
+        button.src = "afb/savebutton.png"
+    }
 }
 
-grijsOpslaan.addEventlistener("click", change);
+button.addEventListener("click", change);
