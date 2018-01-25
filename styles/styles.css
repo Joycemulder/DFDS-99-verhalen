@@ -364,7 +364,7 @@ a + footer {
 
 }
 
-footer + img[alt="opslaan icon"] {
+.opslaan {
     width: 1.13rem;
     height: 1.3rem;
     padding: 0.5rem 1rem 0 0;
@@ -374,14 +374,15 @@ footer + img[alt="opslaan icon"] {
 
 }
 
-img[alt="opslaan icon"] + img[alt="opgeslagen icon"] {
+.opgeslagen {
     width: 1.13rem;
     height: 1.3rem;
     padding: 0.5rem 1rem 0 0;
     grid-column-start: 4;
     grid-row-start: 3;
     justify-self: end;
-    display: none;
+    transition: all 0.2s;
+
 
 }
 
