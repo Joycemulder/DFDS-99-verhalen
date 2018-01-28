@@ -75,41 +75,48 @@ img[alt="search icon"] {
 /* The side navigation menu */
 
 .dropdown1 {
+    display: block;
     grid-column-start: 4;
     padding: 0.1rem 0.5rem 0;
     width: 2.5rem;
     height: 2.6rem;
+    position: relative;
 }
 
 /* The side navigation menu */
 
 #buttondrop {
+    display: block;
     border: none;
     grid-column-start: 4;
     width: 2.5rem;
     height: 2.5rem;
-    margin-left: 1rem;
     justify-self: end;
+    outline: none;
 
 }
 
 #buttonup {
     display: none;
-    grid-column-start: 4;
+    outline: none;
+
 
 }
 
 .menu1 {
+    display: block;
     display: none;
-    grid-column-start: 4;
+
+
 }
 
 .menu2 {
+    display: block;
     background-image: url(afb/menu.png);
     width: 10.3rem;
     height: 11.2rem;
     position: absolute;
-    grid-column-start: 4;
+    right: 0;
 
 }
 
@@ -121,7 +128,7 @@ img[alt="search icon"] {
     text-decoration: none;
     padding: 1rem;
     color: #ffffff;
-    grid-column-start: 4;
+
 
 }
 
