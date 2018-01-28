@@ -45,24 +45,6 @@ html {
     padding: 0;
 }
 
-/*button*/
-
-button {
-    color: #ffffff;
-    background-color: #F6861F;
-    font-family: dfds-bold;
-    font-size: 1.25rem;
-    padding: 0.3rem 1rem;
-    border: none;
-    transition-duration: 0.3s;
-    text-transform: uppercase;
-
-}
-
-button:hover {
-    background-color: #85BCE9;
-}
-
 /*Header*/
 
 header {
@@ -87,11 +69,64 @@ img[alt="search icon"] {
     justify-self: end;
 }
 
-img[alt="hamburger icon"] {
+
+/*dropdown menu*/
+
+/* The side navigation menu */
+
+.dropdown1 {
+    grid-column-start: 4;
+    padding: 0.1rem 0.5rem 0;
+    width: 2.5rem;
+    height: 2.6rem;
+}
+
+/* The side navigation menu */
+
+#buttondrop {
+    border: none;
     grid-column-start: 4;
     width: 2.5rem;
+    height: 2.5rem;
     margin-left: 1rem;
     justify-self: end;
+
+}
+
+#buttonup {
+    display: none;
+    grid-column-start: 4;
+
+}
+
+.menu1 {
+    display: none;
+    grid-column-start: 4;
+}
+
+.menu2 {
+    background-image: url(afb/menu.png);
+    width: 10.3rem;
+    height: 11.2rem;
+    position: absolute;
+    grid-column-start: 4;
+
+}
+
+.menu2 a {
+    display: block;
+    font-family: dfds-bold;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem;
+    color: #ffffff;
+    grid-column-start: 4;
+
+}
+
+.menu2 a:hover {
+    color: #000000;
 }
 
 h1 {
@@ -135,6 +170,17 @@ div > article {
 
 }
 
+p + button {
+    color: #ffffff;
+    background-color: #F6861F;
+    font-family: dfds-bold;
+    font-size: 1.25rem;
+    padding: 0.3rem 1rem;
+    border: none;
+    transition-duration: 0.3s;
+    text-transform: uppercase;
+}
+
 
 
 /* DROP DOWN FILTER AND SORT from w3schools https://www.w3schools.com/howto/howto_css_dropdown.asp & https://www.w3schools.com/howto/howto_js_dropdown.asp */
@@ -151,6 +197,8 @@ div > article {
     cursor: pointer;
     letter-spacing: 0.08rem;
     text-align: center;
+    font-family: dfds-bold;
+    text-transform: uppercase;
 }
 
 
