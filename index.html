@@ -16,12 +16,14 @@
         <h1>99 verhalen</h1>
         <!-- Navigatie -->
         <img src="afb/zoeken.png" alt="search icon">
-        <img src="afb/hamburger.png" alt="hamburger icon">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="mijnlijst.html">Mijn lijst</a>
-            <a href="login.html">Uitloggen</a>
-        </nav>
+        <div class="dropdown">
+            <button id="buttondrop"><img src="afb/hamburger.png" alt="hamburger icon" id="clicknavopen"></button>
+            <nav id="sidenav" class="slideout">
+                <a href="index.html">Home</a>
+                <a href="mijnlijst.html">Mijn lijst</a>
+                <a href="login.html">Uitloggen</a>
+            </nav>
+        </div>
         <!-- Zoeken -->
 
         <!--<label for="searchinput"></label>
