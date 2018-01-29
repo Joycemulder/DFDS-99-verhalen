@@ -145,13 +145,35 @@ div + button {
 
 }
 
-button + img[alt="legester1"] {
+.empthyster {
     grid-column-start: 1;
     grid-row-start: 2;
     width: 2rem;
+    height: 2rem;
+}
+
+.fullster {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    width: 2rem;
+    height: 2rem;
+    background-image: url(afb/volster.png);
+}
+
+
+
+button + div {
+    display: flex;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    width: 8rem;
     padding: 1rem;
 }
 
+
+
+/*
 img[alt="legester1"] + img[alt="legester2"] {
     grid-column-start: 1;
     grid-row-start: 2;
@@ -180,7 +202,15 @@ img[alt="legester4"] + img[alt="legester5"] {
     padding: 1rem 1rem 1rem 11rem;
 }
 
-img + form {
+img[alt="volester"] {
+    width: 2rem;
+    padding: 1rem 1rem 1rem 11rem;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+*/
+
+div + form {
     grid-column-start: 1;
     grid-row-start: 3;
     font-family: dfds-light;

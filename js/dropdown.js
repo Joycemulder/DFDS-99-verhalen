@@ -92,4 +92,3 @@ var change = function () {
 
 buttonham.addEventListener("click", change);
 
-/*sterren*/
