@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/blind.css">
+    <title>Blind</title>
+</head>
+
+<body>
+    <header>
+
+
+        <img src="afb/Dfds_2015_logo.svg.png" alt="logo">
+        <h1>99 verhalen</h1>
+        <!-- Navigatie -->
+        <img src="afb/zoeken.png" alt="search icon">
+        <img src="afb/hamburger.png" alt="hamburger icon">
+        <!--<nav>
+            <a href="index.html">Home</a>
+            <a href="mijnlijst.html">Mijn lijst</a>
+            <a href="login.html">Uitloggen</a>
+        </nav>
+-->
+        <!-- Zoeken -->
+
+        <!--<label for="searchinput"></label>
+        <input type="search" name="zoekinput" placeholder="Zoeken.." id="searchinput">
+-->
+    </header>
+
+    <!-- Verhaal bron:https://codepen.io/mayurbirle/pen/eEevBZ/-->
+    <div class="container">
+
+        <input type="radio" id="i1" name="images" checked />
+        <input type="radio" id="i2" name="images" />
+        <input type="radio" id="i3" name="images" />
+        <input type="radio" id="i4" name="images" />
+        <input type="radio" id="i5" name="images" />
+
+        <div class="slide_img" id="one">
+
+            <img src="afb/Nichterig.png">
+
+            <label class="prev" for="i5"><span>&#x2039;</span></label>
+            <label class="next" for="i2"><span>&#x203a;</span></label>
+
+        </div>
+
+        <div class="slide_img" id="two">
+
+            <img src="afb/">
+
+            <label class="prev " for="i1 "><span>&#x2039;</span></label>
+            <label class="next " for="i3 "><span>&#x203a;</span></label>
+
+        </div>
+
+        <div class="slide_img " id="three ">
+            <img src="http://wallpaperswide.com/download/up_house-wallpaper-1280x800.jpg ">
+
+            <label class="prev " for="i2 "><span>&#x2039;</span></label>
+            <label class="next " for="i4 "><span>&#x203a;</span></label>
+        </div>
+
+        <div class="slide_img " id="four ">
+            <img src="http://wallpaperswide.com/download/big_hero_6_baymax-wallpaper-1152x720.jpg ">
+
+            <label class="prev " for="i3 "><span>&#x2039;</span></label>
+            <label class="next " for="i5 "><span>&#x203a;</span></label>
+        </div>
+
+        <div class="slide_img " id="five ">
+            <img src="http://www.wallpapereast.com/static/images/toys-wallpaper-hd-16339-17046-hd-wallpapers.jpg ">
+
+            <label class="prev " for="i4 "><span>&#x2039;</span></label>
+            <label class="next " for="i1 "><span>&#x203a;</span></label>
+
+        </div>
+
+
+    </div>
+    <section>
+        <article>
+
+            <!-- Favoriet -->
+            <div>
+
+                <button type="button " name="favoriet "><a href="mijnlijst.html ">Toevoegen aan mijn lijst</a></button>
+                <div id="div ">
+                    <img src="afb/leegster.png " alt="legester1 " id="leegster " class="empthyster ">
+                    <img src="afb/leegster.png " alt="legester2 " id="leegster " class="empthyster ">
+                    <img src="afb/leegster.png " alt="legester3 " id="leegster " class="empthyster ">
+                    <img src="afb/leegster.png " alt="legester4 " id="leegster " class="empthyster ">
+                    <img src="afb/leegster.png " alt="legester5 " id="leegster " class="empthyster ">
+                </div>
+
+                <!-- commentaar -->
+                <form>
+                    <legend>Schrijf hier je commentaar</legend>
+                    <p>Naam:</p> <input type="text " name="usrname ">
+                    <textarea rows="5 " cols="50 " name="comment " form="usrform "></textarea>
+                    <button type="button " name="verzenden ">Verzenden</button>
+                </form>
+
+            </div>
+        </article>
+    </section>
+    <script type="text/javascript " src="js/verhalen.js "></script>
+</body>
+
+</html>

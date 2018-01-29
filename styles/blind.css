@@ -1,0 +1,373 @@
+/*Typografie*/
+
+@font-face {
+    font-family: "dfds-bold";
+    src: url('../fonts/dfds-bold.eot') format('embedded-opentype'), url('../fonts/dfds-bold.ttf') format('truetype'), url('../fonts/dfds-bold.woff') format('web-openfont');
+}
+
+@font-face {
+    font-family: "dfds-light";
+    src: url('../fonts/dfds-light.eot') format('embedded-opentype'), url('../fonts/dfds-light.ttf') format('truetype'), url('../fonts/dfds-light.woff') format('web-openfont');
+}
+
+h2,
+h3,
+h4,
+p {
+    font-family: dfds-bold;
+}
+
+nav,
+h1,
+p,
+label,
+a,
+footer,
+    {
+    font-family: dfds-light;
+}
+
+
+h3 {
+    font-size: 1.25rem;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+
+}
+
+
+/*Kleur*/
+
+body,
+html {
+    background-color: #EEF0F1;
+    margin: 0;
+    padding: 0;
+}
+
+/*button*/
+
+button {
+    color: #ffffff;
+    background-color: #F6861F;
+    font-family: dfds-bold;
+    font-size: 1.25rem;
+    padding: 0.3rem 1rem;
+    border: none;
+    transition-duration: 0.3s;
+    text-transform: uppercase;
+    height: 2.8rem;
+
+}
+
+button:hover {
+    background-color: #85BCE9;
+}
+
+/*Header*/
+
+header {
+    display: grid;
+    grid-template-columns: 9rem 9rem auto 3rem 0.7rem;
+    grid-template-rows: 3rem;
+    align-items: center;
+    color: #85BCE9;
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+}
+
+img[alt="logo"] {
+    width: 7rem;
+    padding: 0 0.5rem;
+    margin-left: 1rem;
+}
+
+img[alt="search icon"] {
+    grid-column-start: 3;
+    width: 2.5rem;
+    justify-self: end;
+}
+
+img[alt="hamburger icon"] {
+    grid-column-start: 4;
+    width: 2.5rem;
+    margin-left: 1rem;
+    justify-self: end;
+}
+
+h1 {
+    font-size: 1.6rem;
+    font-family: dfds-light;
+
+}
+
+a {
+    font-family: dfds-bold;
+    font-size: 1.25rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*slider bron https://codepen.io/mayurbirle/pen/eEevBZ/*/
+
+#i1,
+#i2,
+#i3,
+#i4,
+#i5 {
+    display: none;
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    width: 97%;
+    height: 0;
+    padding-bottom: 38%;
+    user-select: none;
+    background-color: #1c1c1c;
+    border: none;
+    margin-bottom: 2rem;
+}
+
+.container .slide_img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.container .slide_img img {
+    width: inherit;
+    height: inherit;
+}
+
+.prev,
+.next {
+    width: 12%;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    background-color: rgba(88, 88, 88, .2);
+    color: rgba(244, 244, 244, .9);
+    z-index: 99;
+    transition: .45s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0;
+}
+
+label span {
+    position: absolute;
+    font-size: 100pt;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev:hover,
+.next:hover {
+    transition: .3s;
+    background-color: rgba(88, 88, 89, .8);
+    color: #ffffff;
+}
+
+.container #nav_slide {
+    width: 100%;
+    bottom: 12%;
+    height: 11px;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+    cursor: default;
+}
+
+#nav_slide .dots {
+    top: -5px;
+    width: 18px;
+    height: 18px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: .4s;
+}
+
+#nav_slide .dots:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: .25s
+}
+
+.slide_img {
+    z-index: -1;
+}
+
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three,
+#i4:checked ~ #four,
+#i5:checked ~ #five {
+    z-index: 9;
+    animation: scroll 1s ease-in-out;
+}
+
+#i1:checked ~ #nav_slide #dot1,
+#i2:checked ~ #nav_slide #dot2,
+#i3:checked ~ #nav_slide #dot3,
+#i4:checked ~ #nav_slide #dot4,
+#i5:checked ~ #nav_slide #dot5 {
+    background-color: rgba(255, 255, 255, .9);
+}
+
+@keyframes scroll {
+    0% {
+        opacity: .4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*het verhaal*/
+
+div + section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5;
+    grid-column-gap: 0.8rem;
+    grid-row-gap: 1.25rem;
+    margin: 0 1.25rem 1.25rem;
+    background-color: #ffffff;
+    padding: 1rem;
+
+}
+
+
+/* sterren en comment*/
+
+article + div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 4;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    padding: 1rem;
+}
+
+div + button {
+    grid-column-start: 1;
+    grid-row-start: 1;
+
+}
+
+.empthyster {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    width: 2rem;
+    height: 2rem;
+}
+
+.fullster {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    width: 2rem;
+    height: 2rem;
+    background-image: url(afb/volster.png);
+}
+
+
+
+button + div {
+    display: flex;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    width: 8rem;
+    padding: 1rem;
+}
+
+
+
+
+div + form {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    font-family: dfds-light;
+
+
+}
+
+legend + p {
+    font-family: dfds-light;
+}
+
+p + input {
+    display: block;
+    border-style: solid;
+    border-color: #EEF0F1;
+}
+
+input + textarea {
+    display: block;
+    border-style: solid;
+    border-color: #EEF0F1;
+    width: 19rem;
+    height: 3rem;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    transition: 0.5sec ease;
+}
+
+textarea + input {
+    color: #ffffff;
+    background-color: #F6861F;
+    font-family: dfds-bold;
+    font-size: 1.25rem;
+    padding: 0.3rem 1rem;
+    border: none;
+    transition-duration: 0.3s;
+    text-transform: uppercase;
+    height: 2.8rem;
+}
+
+textarea + input:hover {
+    background-color: #85BCE9;
+}
+
+
+/*responsive*/
+
+@media screen and (min-width: 20rem) {
+    .container {
+        border: none;
+        width: 100%;
+        height: 0;
+        padding-bottom: 55%;
+    }
+
+    label span {
+        font-size: 50pt;
+    }
+
+    .prev,
+    .next {
+        width: 15%;
+    }
+
+}
+
+@media screen and (min-width: 38rem) {
+    .me {
+        display: none;
+    }
+}
