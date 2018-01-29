@@ -167,13 +167,12 @@ div > article {
     grid-row-start: 1;
     grid-row-end: 1;
     padding: 1rem;
-    background-image: url("afb/paranoia.png");
+    background-image: url("afb/paranoiatra.png");
     background-repeat: no-repeat;
     background-size: cover;
-    color: #55A963;
-
-
+    color: #002b45;
 }
+
 
 p + button {
     color: #ffffff;
@@ -470,6 +469,7 @@ p + a {
 a + footer {
     grid-row-start: 3;
     grid-column-start: 1;
+
 
 }
 

@@ -70,9 +70,10 @@ var menudicht = function () {
 
 
 }
-kruisButton.addEventListener("click", menudicht)
+kruisButton.addEventListener("click", menudicht);
 
 console.log('hallo');
+
 
 
 var buttonham = document.getElementById("clicknavopen");
@@ -86,6 +87,7 @@ var change = function () {
     } else if (srcv = "afb/kruismenu.png") {
         buttonhame.src = "afb/hamburger.png"
     }
+
 }
 
 buttonham.addEventListener("click", change);

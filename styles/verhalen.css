@@ -185,4 +185,63 @@ img + form {
     grid-row-start: 3;
     font-family: dfds-light;
 
+
+}
+
+legend + p {
+    font-family: dfds-light;
+}
+
+p + input {
+    display: block;
+    border-style: solid;
+    border-color: #EEF0F1;
+}
+
+input + textarea {
+    display: block;
+    border-style: solid;
+    border-color: #EEF0F1;
+    width: 19rem;
+    height: 3rem;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    transition: 0.5sec ease;
+}
+
+textarea + input {
+    color: #ffffff;
+    background-color: #F6861F;
+    font-family: dfds-bold;
+    font-size: 1.25rem;
+    padding: 0.3rem 1rem;
+    border: none;
+    transition-duration: 0.3s;
+    text-transform: uppercase;
+    height: 2.8rem;
+}
+
+textarea + input:hover {
+    background-color: #85BCE9;
+}
+
+/*responsive*/
+
+@media screen and (min-width: 20rem) {
+    img[alt="paranoia verhaal3"] {
+        display: block;
+    }
+    img[alt="paranoia verhaal"] {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 38rem) {
+    img[alt="paranoia verhaal3"] {
+        display: none;
+    }
+    img[alt="paranoia verhaal"] {
+        display: block;
+    }
 }
