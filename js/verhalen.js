@@ -5,4 +5,3 @@ function sterToggle() {
     this.classList.toggle('fullster');
 }
 document.getElementById('leegster').addEventListener('click', sterToggle);
-document.getElementById('legester').addEventListener('click', sterToggle);
