@@ -72,8 +72,6 @@ img[alt="search icon"] {
 
 /*dropdown menu*/
 
-/* The side navigation menu */
-
 .dropdown1 {
     display: block;
     grid-column-start: 4;
@@ -83,7 +81,6 @@ img[alt="search icon"] {
     position: relative;
 }
 
-/* The side navigation menu */
 
 #buttondrop {
     display: block;
@@ -112,7 +109,7 @@ img[alt="search icon"] {
 
 .menu2 {
     display: block;
-    background-image: url(afb/menu.png);
+    background-color: #85BCE9;
     width: 10.3rem;
     height: 11.2rem;
     position: absolute;
@@ -134,7 +131,7 @@ img[alt="search icon"] {
 }
 
 .menu2 a:hover {
-    color: #000000;
+    color: #002b45;
 }
 
 h1 {
@@ -189,6 +186,9 @@ p + button {
     text-transform: uppercase;
 }
 
+p + button:hover {
+    background-color: #85BCE9;
+}
 
 
 /* DROP DOWN FILTER AND SORT from w3schools https://www.w3schools.com/howto/howto_css_dropdown.asp & https://www.w3schools.com/howto/howto_js_dropdown.asp */
@@ -215,6 +215,7 @@ p + button {
 .dropbtn:hover,
 .dropbtn:focus {
     text-decoration-line: underline;
+    background-color: #85BCE9;
 }
 
 
@@ -246,6 +247,7 @@ p + button {
     padding: 0.75rem 1rem;
     text-decoration: none;
     display: block;
+
 }
 
 
@@ -255,6 +257,56 @@ p + button {
     background-color: #ffffff;
     color: white;
     font-size: 30rem;
+}
+
+h3 + h4 {
+    margin: 01rem 0.5rem 0.3rem 0;
+}
+
+.slider {
+    width: 9.5rem;
+
+}
+
+div + p {
+    font-family: dfds-light;
+    margin: 0 0 1.5rem 0;
+
+}
+
+p + label {
+    margin: 0.8rem 0.5rem 0.5rem 0;
+    font-family: dfds-bold;
+}
+
+input + label {
+    font-family: dfds-light;
+    padding: 1rem 1rem 1rem 0rem;
+}
+
+label + button {
+    margin: 0.8rem 0.5rem 0.5rem 0;
+    background-color: #002b45;
+    color: #ffffff;
+    background-color: #F6861F;
+    font-family: dfds-bold;
+    font-size: 1.25rem;
+    padding: 0.3rem 1rem;
+    border: none;
+    transition-duration: 0.3s;
+    text-transform: uppercase;
+
+}
+
+button + button {
+    color: #ffffff;
+    background-color: #F6861F;
+    font-family: dfds-bold;
+    font-size: 1.25rem;
+    padding: 0.3rem 1rem;
+    border: none;
+    transition-duration: 0.3s;
+    text-transform: uppercase;
 }
 
 

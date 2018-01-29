@@ -75,17 +75,19 @@ kruisButton.addEventListener("click", menudicht)
 console.log('hallo');
 
 
-var buttonSave = document.getElementById("clicknavopen");
-var srcv = buttonSave.src;
+var buttonham = document.getElementById("clicknavopen");
+var srcv = buttonham.src;
 
-console.log("buttonsaved");
+console.log("buttonham");
 
 var change = function () {
     if (srcv = "afb/hamburger.png") {
-        buttonSave.src = "afb/kruismenu.png"
+        buttonham.src = "afb/kruismenu.png"
     } else if (srcv = "afb/kruismenu.png") {
-        buttonSave.src = "afb/hamburger.png"
+        buttonhame.src = "afb/hamburger.png"
     }
 }
 
-buttonSave.addEventListener("click", change);
+buttonham.addEventListener("click", change);
+
+/*sterren*/
