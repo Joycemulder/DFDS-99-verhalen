@@ -119,15 +119,14 @@ section {
     grid-column-gap: 0.8rem;
     grid-row-gap: 1.25rem;
     margin: 0 1.25rem 1.25rem;
-    background-color: #ffffff;
+
 
 }
 
 .mySlides {
     width: 100%;
+    height: 60rem;
     position: relative;
-
-
 }
 
 
@@ -147,6 +146,14 @@ section {
     position: absolute;
     top: 50%;
     left: 96.3%;
+}
+
+#desktopeen {
+    background-size: contain;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-image: url(afb/desktop/ongeboren1.png);
+
 }
 
 
@@ -243,19 +250,20 @@ textarea + input:hover {
 /*responsive*/
 
 @media screen and (min-width: 20rem) {
-    img[alt="paranoia verhaal3"] {
-        display: block;
-    }
-    img[alt="paranoia verhaal"] {
-        display: none;
+    #desktopeen {
+        background-image: url(afb/mobiel/mobiel1.png);
     }
 }
 
-@media screen and (min-width: 38rem) {
-    img[alt="paranoia verhaal3"] {
-        display: none;
+@media screen and (min-width: 35rem) {
+    #desktopeen {
+        background-image: url(afb/tablet/tablet1.png);
     }
-    img[alt="paranoia verhaal"] {
-        display: block;
+}
+
+
+@media screen and (min-width: 50rem) {
+    #desktopeen {
+        background-image: url(afb/desktop/ongeboren1.png);
     }
 }
