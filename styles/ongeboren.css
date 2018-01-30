@@ -118,7 +118,8 @@ section {
     grid-template-rows: 5;
     grid-column-gap: 0.8rem;
     grid-row-gap: 1.25rem;
-    margin: 0 1.25rem 1.25rem;
+    margin: 1.25rem 1.25rem 1.25rem;
+    background-color: #ffffff;
 
 
 }
@@ -145,7 +146,7 @@ section {
 .w3-display-right {
     position: absolute;
     top: 50%;
-    left: 96.3%;
+    left: 95%;
 }
 
 #desktopeen {
@@ -153,6 +154,62 @@ section {
     background-position: center 0;
     background-repeat: no-repeat;
     background-image: url(afb/desktop/ongeboren1.png);
+
+}
+
+#desktoptwee {
+    background-size: contain;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-image: url(afb/desktop/ongeboren2.png);
+
+}
+
+#desktopdrie {
+    background-size: contain;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-image: url(afb/desktop/ongeboren3.png);
+
+}
+
+#desktopvier {
+    background-size: contain;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-image: url(afb/desktop/ongeboren4.png);
+
+}
+
+#desktopvijf {
+    background-size: contain;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-image: url(afb/desktop/ongeboren5.png);
+
+}
+
+#desktopzes {
+    background-size: contain;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-image: url(afb/desktop/ongeboren6.png);
+
+}
+
+#desktopzeven {
+    background-size: contain;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-image: url(afb/desktop/ongeboren7.png);
+
+}
+
+#desktopacht {
+    background-size: contain;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-image: url(afb/desktop/ongeboren8.png);
 
 }
 
@@ -253,11 +310,53 @@ textarea + input:hover {
     #desktopeen {
         background-image: url(afb/mobiel/mobiel1.png);
     }
+    #desktoptwee {
+        background-image: url(afb/mobiel/mobiel2.png);
+    }
+    #desktopdrie {
+        background-image: url(afb/mobiel/mobiel3.png);
+    }
+    #desktopvier {
+        background-image: url(afb/mobiel/mobiel4.png);
+    }
+    #desktopvijf {
+        background-image: url(afb/mobiel/mobiel5.png);
+    }
+    #desktopzes {
+        background-image: url(afb/mobiel/mobiel6.png);
+    }
+    #desktopzeven {
+        background-image: url(afb/mobiel/mobiel7.png);
+    }
+    #desktopacht {
+        background-image: url(afb/mobiel/mobiel8.png);
+    }
 }
 
 @media screen and (min-width: 35rem) {
     #desktopeen {
         background-image: url(afb/tablet/tablet1.png);
+    }
+    #desktoptwee {
+        background-image: url(afb/tablet/tablet2.png);
+    }
+    #desktopdrie {
+        background-image: url(afb/tablet/tablet3.png);
+    }
+    #desktopvier {
+        background-image: url(afb/tablet/tablet4.png);
+    }
+    #desktopvijf {
+        background-image: url(afb/tablet/tablet5.png);
+    }
+    #desktopzes {
+        background-image: url(afb/tablet/tablet6.png);
+    }
+    #desktopzeven {
+        background-image: url(afb/tablet/tablet7.png);
+    }
+    #desktopacht {
+        background-image: url(afb/tablet/tablet8.png);
     }
 }
 
@@ -265,5 +364,26 @@ textarea + input:hover {
 @media screen and (min-width: 50rem) {
     #desktopeen {
         background-image: url(afb/desktop/ongeboren1.png);
+    }
+    #desktoptwee {
+        background-image: url(afb/desktop/ongeboren2.png);
+    }
+    #desktopdrie {
+        background-image: url(afb/desktop/ongeboren3.png);
+    }
+    #desktopvier {
+        background-image: url(afb/desktop/ongeboren4.png);
+    }
+    #desktopvijf {
+        background-image: url(afb/desktop/ongeboren5.png);
+    }
+    #desktopzes {
+        background-image: url(afb/desktop/ongeboren6.png);
+    }
+    #desktopzeven {
+        background-image: url(afb/desktop/ongeboren7.png);
+    }
+    #desktopacht {
+        background-image: url(afb/desktop/ongeboren8.png);
     }
 }
