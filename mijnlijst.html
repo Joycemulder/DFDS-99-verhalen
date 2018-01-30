@@ -1,55 +1,79 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Mijn lijst</title>
 </head>
+
 <body>
-   <header>
-       <h1>DFDS 99 verhalen</h1>
-   </header>
-  
-<!-- Navigatie -->
-   <nav>
-        <a href="index.html">Home</a>
-        <a href="mijnlijst.html">Mijn lijst</a>
-        <a href="login.html">Inloggen</a>
-    </nav>
-    
-    
-    <!-- Zoeken -->
-    <form>
-    <input type="search" name="zoekinput" placeholder="Zoeken.." id="searchinput">
-    <button id="searchSubmit">Zoeken</button>
-    </form>
-    
-    
-   
-<!-- Verhalen -->
-  
-      <article>
-          <h2>Blind</h2>
-          <p>
-              Piepende remmen, bus 21 komt tot stilstand. De stem van de buschauffeur, naar mij gericht, zakelijk, niet vriendelijk, niet onvriendelijk: ‘Centraal Station, eindhalte’. Het sissende geluid van busdeuren die open gaan. Mensen drommen naar buiten. Voorzichtig vind ik mijn weg naar de uitgang en stap uit. Eigenlijk wilde ik mijn zoon meenemen, maar dat...
-          </p>
-          <a href="blind.html">Lees verder</a>
-      </article>
-      <article>
-          <h2>Ongeboren</h2>
-          <p>
-              Jij bevindt je een paar kilometer verderop in de buik van je moeder. Ik heb je gisteren gezien. Ik zag je armpjes, je beentjes, je naar verhouding enorme hoofd met een flinke kaaklijn. Je lag lekker te slapen. Je grote broer ligt nu ook te slapen, in z’n wagentje. Eigenlijk wil hij niet meer in...
-          </p>
-          <a href="ongeboren.html">Lees verder</a>
-      </article>
-      <article>
-          <h2>Paranoia</h2>
-          <p>
-              Ik sluip de bus uit. Kop in de kraag. Ik maak me klein en duw m’n zoon vooruit. Hij slaapt. Eindelijk. Zijn gejengel trok veel te veel aandacht. De mensen lopen over het stationsplein. Het voelt alsof er een grote, knipperende pijl boven m’n hoofd hangt: HIER LOOPT HIJ! Gelukkig is het kloteweer en kijken...
-          </p>
-          <a href="paranoia.html">Lees verder</a>
-      </article>
-  
-   
+    <header>
+
+
+        <a href="index.html"><img src="afb/Dfds_2015_logo.svg.png" alt="logo"></a>
+        <h1>99 verhalen</h1>
+        <!-- Navigatie -->
+        <img src="afb/zoeken.png" alt="search icon">
+        <img src="afb/hamburger.png" alt="hamburger icon">
+        <!--<nav>
+            <a href="index.html">Home</a>
+            <a href="mijnlijst.html">Mijn lijst</a>
+            <a href="login.html">Uitloggen</a>
+        </nav>
+-->
+        <!-- Zoeken -->
+
+        <!--<label for="searchinput"></label>
+        <input type="search" name="zoekinput" placeholder="Zoeken.." id="searchinput">
+-->
+    </header>
+
+
+    <!-- Verhalen -->
+    <section>
+
+        <article>
+            <img src="afb/blind.png" alt="verhaal blind">
+
+            <div>
+                <h3>Blind</h3>
+                <img src="afb/starred.png" alt="populair ster">
+                <p>198</p>
+
+                <a href="blind.html">Lees verder</a>
+                <footer>89 opmerkingen</footer>
+                <img src="afb/savebutton.png" id="save" alt="opslaan icon" class="opslaan">
+
+            </div>
+        </article>
+        <article>
+            <img src="afb/desktop/ongeboren1.png" alt="verhaal ongeboren">
+            <div>
+                <h3>Ongeboren</h3>
+                <img src="afb/stargreen.png" alt="populair ster">
+                <p>198</p>
+                <a href="ongeboren.html">Lees verder</a>
+                <footer>102 opmerkingen</footer>
+                <img src="afb/savebutton.png" id="save" alt="opslaan icon" class="opslaan">
+            </div>
+        </article>
+        <article>
+            <img src="afb/Van%20Vader%20Tot%20Zoon.png" alt="verhaal van vader tot zoon">
+            <div>
+                <h3>Van vader tot zoon</h3>
+                <img src="afb/starpurple.png" alt="populair ster">
+                <p>198</p>
+                <a href="vanvadertotzoon.html">Lees verder</a>
+                <footer>65 opmerkingen</footer>
+                <img src="afb/savebutton.png" id="save" alt="opslaan icon" class="opslaan">
+            </div>
+        </article>
+    </section>
+
+    <script type="text/javascript" src="js/dropdown.js"></script>
+
+
 </body>
+
 </html>
