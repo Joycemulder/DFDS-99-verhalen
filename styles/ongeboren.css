@@ -118,24 +118,41 @@ section {
     grid-template-rows: 5;
     grid-column-gap: 0.8rem;
     grid-row-gap: 1.25rem;
-    margin: 1.25rem 1.25rem 1.25rem;
+    margin: 0 1.25rem 1.25rem;
     background-color: #ffffff;
 
 }
 
-.scroll {
-    display: inline-block;
-    overflow-y: scroll;
-    height: 10rem;
-    width: 100px;
+.mySlides {
+    width: 100%;
+    position: relative;
+
 
 }
 
 
+.w3-button {
+    background-color: #F6861F;
+    padding: 1rem;
+
+}
+
+.w3-display-left {
+    position: absolute;
+    top: 50%;
+
+}
+
+.w3-display-right {
+    position: absolute;
+    top: 50%;
+    left: 96.3%;
+}
+
 
 /* sterren en comment*/
 
-img + div {
+div + div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 4;
@@ -175,7 +192,6 @@ button + div {
     width: 8rem;
     padding: 1rem;
 }
-
 
 
 div + form {
@@ -227,37 +243,19 @@ textarea + input:hover {
 /*responsive*/
 
 @media screen and (min-width: 20rem) {
-    img[alt="blindverhaal3"] {
+    img[alt="paranoia verhaal3"] {
         display: block;
     }
-    img[alt="blindverhaal2"] {
-        display: none;
-    }
-    img[alt="blindverhaal1"] {
+    img[alt="paranoia verhaal"] {
         display: none;
     }
 }
 
-@media screen and (min-width: 35rem) {
-    img[alt="blindverhaal3"] {
+@media screen and (min-width: 38rem) {
+    img[alt="paranoia verhaal3"] {
         display: none;
     }
-    img[alt="blindverhaal2"] {
-        display: block;
-    }
-    img[alt="blindverhaal1"] {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 50rem) {
-    img[alt="blindverhaal3"] {
-        display: none;
-    }
-    img[alt="blindverhaal2"] {
-        display: none;
-    }
-    img[alt="blindverhaal1"] {
+    img[alt="paranoia verhaal"] {
         display: block;
     }
 }
