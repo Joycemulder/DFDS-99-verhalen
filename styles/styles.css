@@ -49,7 +49,7 @@ html {
 
 header {
     display: grid;
-    grid-template-columns: 9rem 9rem auto 3rem 0.7rem;
+    grid-template-columns: 9rem 9rem auto 3rem 3rem 0.7rem;
     grid-template-rows: 3rem;
     align-items: center;
     color: #85BCE9;
@@ -66,7 +66,7 @@ img[alt="logo"] {
 /* Dropdown zoeken */
 
 .dropdownbutton {
-    grid-column-start: 3;
+    grid-column-start: 4;
     background-image: url(afb/zoeken.png);
     background-repeat: no-repeat;
     width: 2.2rem;
@@ -89,6 +89,7 @@ img[alt="logo"] {
 /* The container <div> - needed to position the dropdown content */
 
 .dropdownzoek {
+    grid-column-start: 4;
     position: relative;
     display: inline-block;
 }
@@ -101,16 +102,18 @@ img[alt="logo"] {
     position: absolute;
     border-color: #EEF0F1;
     border-style: solid;
-    width: 75px;
+    width: 10rem;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
     transition: all .5s ease;
     padding: 0.7rem;
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+    right: 0;
+
 }
 
 .dropdown-zoek:focus {
-    width: 200px;
+    width: 15.5rem;
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
@@ -160,7 +163,7 @@ img[alt="logo"] {
     padding: 1rem;
     width: 1.5rem;
     background-color: #85BCE9;
-    min-width: 160px;
+    min-width: 10rem;
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
     right: 0;
 
