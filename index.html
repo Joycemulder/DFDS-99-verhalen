@@ -15,9 +15,10 @@
         <a href="index.html"><img src="afb/Dfds_2015_logo.svg.png" alt="logo"></a>
         <h1>99 verhalen</h1>
         <!-- Navigatie -->
-        <div>
-            <img src="afb/zoeken.png" alt="zoekeneen" id="zoek" class="zoekbalk1 zoekbalk">
-            <input id="zoekbalk" class="search1 search" type="search" placeholder="Search">
+        <div class="dropdownzoek">
+            <button id="zoek" class="dropdownbutton"></button>
+            <input name="searching" id="mijndropdownzoek" class="dropdown-zoek" type="search" placeholder="Search">
+
         </div>
         <div class="dropdown1">
             <button id="buttondrop"><img src="afb/hamburger.png" alt="hamburger icon" id="clicknavopen" class="navopen"></button>
@@ -49,7 +50,7 @@
 
         <!-- Filter -->
         <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Filteren en Sorteren</button>
+            <button id="myFunction" class="dropbtn">Filteren en Sorteren</button>
             <div id="myDropdown" class="dropdown-content">
 
                 <h3>Filteren</h3>

@@ -1,24 +1,14 @@
 console.log('test');
 /*When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+var click = document.getElementById("myFunction");
+var dropdown = document.getElementById("myDropdown");
+var functie = function () {
+    dropdown.classList.toggle("show");
 }
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function (event) {
-    if (!event.target.matches('.dropbtn')) {
+click.addEventListener('click', functie);
 
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
-    }
-}
 
 
 /*save button*/
@@ -55,6 +45,7 @@ var menuopen = function () {
     kruisButton.classList.remove("navdicht");
     menuzakt.classList.add("menu1");
     menuzakt.classList.remove("menu2");
+    hamburgerButton.classList.add("navopen");
 
 }
 
@@ -81,31 +72,10 @@ var srcv = buttonham.src;
 
 console.log("buttonham");
 
-/*zoekbalk*/
-console.log('test');
-
-var div = document.querySelector('div');
-var button = document.getElementById('zoek');
-var zoekbalk = document.getElementById('zoekbalk');
-
-var zoekt = function () {
-    button.classList.toggle('zoek');
-    zoekbalk.classList.remove('search1');
-    zoekbalk.classList.add('search');
-    zoekbalk.classList.remove('search1');
+var click = document.getElementById("zoek");
+var dropdown = document.getElementById("mijndropdownzoek");
+var functie = function () {
+    dropdown.classList.toggle("show");
 }
 
-button.addEventListener('click', zoekt);
-
-var change = function () {
-    if (srcv = "afb/hamburger.png") {
-        buttonham.src = "afb/kruismenu.png"
-    } else if (srcv = "afb/kruismenu.png") {
-        buttonhame.src = "afb/hamburger.png"
-    }
-
-}
-
-buttonham.addEventListener("click", change);
-
-/*sterren*/
+click.addEventListener('click', functie);
