@@ -72,6 +72,8 @@ var srcv = buttonham.src;
 
 console.log("buttonham");
 
+/*zoeken*/
+
 var click = document.getElementById("zoek");
 var dropdown = document.getElementById("mijndropdownzoek");
 var functie = function () {

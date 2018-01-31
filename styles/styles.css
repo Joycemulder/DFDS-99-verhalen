@@ -66,12 +66,11 @@ img[alt="logo"] {
 /* Dropdown zoeken */
 
 .dropdownbutton {
-    background-color: #F6861F;
+    grid-column-start: 3;
     background-image: url(afb/zoeken.png);
     background-repeat: no-repeat;
-    color: white;
-    width: 13.5rem;
-    height: 3.5rem;
+    width: 2.2rem;
+    height: 2.2rem;
     border: none;
     cursor: pointer;
 
