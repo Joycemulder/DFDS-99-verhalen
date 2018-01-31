@@ -10,8 +10,7 @@ var functieTwee = function () {
 
 clickTwee.addEventListener('click', functieTwee);
 
-/*When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
+/*dropdown filter */
 var click = document.getElementById("myFunction");
 var dropdown = document.getElementById("myDropdown");
 var functie = function () {
@@ -19,6 +18,16 @@ var functie = function () {
 }
 
 click.addEventListener('click', functie);
+
+/*dropdownmenu*/
+
+var clickDrie = document.getElementById("buttondrop");
+var dropdownDrie = document.getElementById("menu");
+var functieDrie = function () {
+    dropdownDrie.classList.toggle("showdrie");
+}
+
+clickDrie.addEventListener('click', functieDrie);
 
 
 
@@ -40,45 +49,3 @@ var change = function () {
 }
 
 buttonSave.addEventListener("click", change);
-
-
-/*menu*/
-console.log('test');
-
-var hamburgerButton = document.getElementById("buttondrop");
-var kruisButton = document.getElementById("buttonup");
-var menuzakt = document.getElementById("menu");
-
-var menuopen = function () {
-
-
-    hamburgerButton.classList.add("navopen");
-    kruisButton.classList.remove("navdicht");
-    menuzakt.classList.add("menu1");
-    menuzakt.classList.remove("menu2");
-    hamburgerButton.classList.add("navopen");
-
-}
-
-hamburgerButton.addEventListener("click", menuopen);
-
-console.log('hi');
-
-var menudicht = function () {
-    hamburgerButton.classList.remove("navopen");
-    kruisButton.classList.add("navdicht");
-    menuzakt.classList.remove("menu1");
-    menuzakt.classList.add("menu2");
-
-
-}
-kruisButton.addEventListener("click", menudicht);
-
-console.log('hallo');
-
-
-
-var buttonham = document.getElementById("clicknavopen");
-var srcv = buttonham.src;
-
-console.log("buttonham");
