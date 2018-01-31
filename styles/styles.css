@@ -63,10 +63,11 @@ img[alt="logo"] {
     margin-left: 1rem;
 }
 
-img[alt="search icon"] {
+img[alt="zoekeneen"] {
     grid-column-start: 3;
     width: 2.5rem;
     justify-self: end;
+
 }
 
 
@@ -132,6 +133,37 @@ img[alt="search icon"] {
 
 .menu2 a:hover {
     color: #002b45;
+}
+
+/*zoekbalk*/
+
+.search1 {
+    display: none;
+}
+
+.search {
+    border-color: #EEF0F1;
+    border-style: solid;
+    width: 75px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+    padding: 0.7rem;
+    right: 0;
+}
+
+.search:focus {
+    width: 200px;
+}
+
+input[type="search"] {
+    background-image: url(afb/zoeken.png);
+    background-repeat: no-repeat;
+}
+
+input[type="search"] {
+    width: 10rem;
+    padding: 0.3rem 0 1rem 2.5rem;
 }
 
 h1 {

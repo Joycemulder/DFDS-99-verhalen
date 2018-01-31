@@ -81,6 +81,22 @@ var srcv = buttonham.src;
 
 console.log("buttonham");
 
+/*zoekbalk*/
+console.log('test');
+
+var div = document.querySelector('div');
+var button = document.getElementById('zoek');
+var zoekbalk = document.getElementById('zoekbalk');
+
+var zoekt = function () {
+    button.classList.toggle('zoek');
+    zoekbalk.classList.remove('search1');
+    zoekbalk.classList.add('search');
+    zoekbalk.classList.remove('search1');
+}
+
+button.addEventListener('click', zoekt);
+
 var change = function () {
     if (srcv = "afb/hamburger.png") {
         buttonham.src = "afb/kruismenu.png"
@@ -92,3 +108,4 @@ var change = function () {
 
 buttonham.addEventListener("click", change);
 
+/*sterren*/
