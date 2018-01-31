@@ -142,15 +142,18 @@ img[alt="logo"] {
     border: none;
     cursor: pointer;
     outline: none;
+    grid-column-start: 5;
 }
 
 .dropdownknop:hover {
     transform: scale(1.1);
+
 }
 
 .dropdownmenu {
     position: relative;
     display: inline-block;
+    grid-column-start: 5;
 }
 
 .menu-twee {
