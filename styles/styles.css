@@ -36,7 +36,7 @@ h3 {
 }
 
 
-/*Kleur*/
+/*body*/
 
 body,
 html {
@@ -81,16 +81,11 @@ img[alt="logo"] {
     transform: scale(1.1);
 }
 
-/* The container <div> - needed to position the dropdown content */
-
 .dropdownzoek {
     grid-column-start: 4;
     position: relative;
     display: inline-block;
 }
-
-
-/* Dropdown Content (Hidden by Default) */
 
 .dropdown-zoek {
     display: none;
@@ -111,7 +106,6 @@ img[alt="logo"] {
     width: 15.5rem;
 }
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 
 .showtwee {
     display: block;
@@ -129,24 +123,16 @@ img[alt="logo"] {
     border: none;
     cursor: pointer;
     outline: none;
-
-
 }
 
 .dropdownknop:hover {
     transform: scale(1.1);
 }
 
-
-/* The container <div> - needed to position the dropdown content */
-
 .dropdownmenu {
     position: relative;
     display: inline-block;
 }
-
-
-/* Dropdown Content (Hidden by Default) */
 
 .menu-twee {
     display: none;
@@ -157,11 +143,7 @@ img[alt="logo"] {
     min-width: 10rem;
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
     right: 0;
-
-
 }
-
-/* Links inside the dropdown */
 
 .menu-twee a {
     color: #ffffff;
@@ -172,17 +154,9 @@ img[alt="logo"] {
     display: block;
 }
 
-
-/* Change color of dropdown links on hover */
-
 .menu-twee a:hover {
     color: #002b45;
-
 }
-
-
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 
 .showdrie {
     display: block;
@@ -214,7 +188,6 @@ header + div {
     grid-column-gap: 0.8rem;
     grid-row-gap: 1.25rem;
     margin: 1.25rem 1.25rem;
-
 }
 
 div > article {
@@ -248,6 +221,8 @@ p + button:hover {
 
 /* DROP DOWN FILTER AND SORT from w3schools https://www.w3schools.com/howto/howto_css_dropdown.asp & https://www.w3schools.com/howto/howto_js_dropdown.asp */
 
+/*aangepast*/
+
 /* Dropdown Button */
 
 .dropbtn {
@@ -264,25 +239,16 @@ p + button:hover {
     text-transform: uppercase;
 }
 
-
-/* Dropdown button on hover & focus */
-
 .dropbtn:hover,
 .dropbtn:focus {
     text-decoration-line: underline;
     background-color: #85BCE9;
 }
 
-
-/* The container <div> - needed to position the dropdown content */
-
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
-
-/* Dropdown Content (Hidden by Default) */
 
 .dropdown-content {
     display: none;
@@ -295,8 +261,6 @@ p + button:hover {
 }
 
 
-/* Links inside the dropdown */
-
 .dropdown-content a {
     color: black;
     padding: 0.75rem 1rem;
@@ -304,9 +268,6 @@ p + button:hover {
     display: block;
 
 }
-
-
-/* Change color of dropdown links on hover */
 
 .dropdown-content a:hover {
     background-color: #ffffff;
@@ -364,9 +325,6 @@ button + button {
     text-transform: uppercase;
 }
 
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-
 .show {
     display: block;
 }
@@ -388,9 +346,6 @@ section {
     transition: all 0.3s;
 }
 
-
-
-
 section article:first-child {
     grid-column-start: 1;
     grid-column-end: 5;
@@ -398,7 +353,6 @@ section article:first-child {
     grid-row-end: 3;
     background-color: #ffffff;
     color: #D16376;
-
 }
 
 section article:first-child + article {
@@ -461,6 +415,7 @@ section article:nth-child(7) {
 
 }
 
+
 /*image van de blokken*/
 
 article img {
@@ -474,7 +429,6 @@ article img {
     object-fit: cover;
 
 }
-
 
 /*grid voor witte blok met tekst*/
 
@@ -493,8 +447,6 @@ img + div {
 div + h3 {
     grid-row-start: 1;
     grid-column-start: 1;
-
-
 }
 
 h3 + img[alt="populair ster"] {
@@ -525,8 +477,6 @@ p + a {
 a + footer {
     grid-row-start: 3;
     grid-column-start: 1;
-
-
 }
 
 .opslaan {
@@ -547,9 +497,6 @@ a + footer {
     grid-column-start: 4;
     grid-row-start: 3;
     justify-self: end;
-
-
-
 }
 
 
@@ -628,9 +575,7 @@ footer {
         grid-row-end: 6;
 
     }
-    nav {
-        display: none;
-    }
+
 }
 
 @media screen and (min-width: 52rem) {
@@ -639,23 +584,18 @@ footer {
         grid-column-end: 3;
         grid-row-start: 4;
         grid-row-end: 4;
-
     }
     section article:nth-child(3) {
         grid-column-start: 3;
         grid-column-end: 5;
         grid-row-start: 4;
         grid-row-end: 4;
-
-
     }
     section article:nth-child(4) {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 5;
         grid-row-end: 5;
-
-
     }
     section article:nth-child(5) {
         grid-column-start: 2;
@@ -669,7 +609,6 @@ footer {
         grid-column-end: 4;
         grid-row-start: 5;
         grid-row-end: 5;
-
     }
     section article:nth-child(7) {
         grid-column-start: 4;
@@ -678,9 +617,5 @@ footer {
         grid-row-end: 5;
 
     }
-    nav {
-            {
-            display: none;
-        }
-    }
+
 }
