@@ -1,4 +1,15 @@
 console.log('test');
+
+/*zoeken*/
+
+var clickTwee = document.getElementById("zoek");
+var dropdownTwee = document.getElementById("mijndropdownzoek");
+var functieTwee = function () {
+    dropdownTwee.classList.toggle("showtwee");
+}
+
+clickTwee.addEventListener('click', functieTwee);
+
 /*When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 var click = document.getElementById("myFunction");
@@ -71,13 +82,3 @@ var buttonham = document.getElementById("clicknavopen");
 var srcv = buttonham.src;
 
 console.log("buttonham");
-
-/*zoeken*/
-
-var click = document.getElementById("zoek");
-var dropdown = document.getElementById("mijndropdownzoek");
-var functie = function () {
-    dropdown.classList.toggle("show");
-}
-
-click.addEventListener('click', functie);
